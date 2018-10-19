@@ -12,6 +12,15 @@ you can either run the scripts directly or leverage the docker container that ha
 2. copy the `vars.env.example` to `vars.env` file and replace the vars with your values
 3. run the docker container using the command below or export your AWS env vars 
 4. run the script of your choosing
+
+## Vars
+
+* `DOMAIN` - base domain for the pcf platform ex. `east.aws.mycompnay.com`
+* `COUNTRY` - the country abbreviation for the CSR
+* `STATE` - the state abbreviation for the CSR
+* `CITY` - the city name for the CSR
+* `COMPANY`- the company name for the CSR
+* `CERT_UPLOAD` - `true` or `false` , if using the aws terraform it will uplaod certs so setting this to false will just output the certs to add to the TF config. 
    
 ## Scripts
 
